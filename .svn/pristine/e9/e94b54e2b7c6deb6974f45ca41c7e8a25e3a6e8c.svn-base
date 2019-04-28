@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/policy/policy",
+    "pages/searchPatent/searchPatent"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fe6246",
+    "navigationBarTitleText": "八月瓜",
+    "navigationBarTextStyle":"white"
+  }
+}

@@ -1,0 +1,30 @@
+<!--pages/handlePatent/handlePatent.wxml-->
+<view class='imageBgView'>
+  <image class='image' src='/image/bgImg/patent_img.png'></image>
+</view>
+<view class='infoBgView'>
+  <view class='title'>发明专利</view>
+  <view class='info'>发明专利</view>
+  <view class='info'>服务费：<span>100元</span> 官费：<span>100元             </span></view>
+  <view class='info'>价格：<span>100元</span>（您已减缓<span>100元            </span>）</view>
+</view>
+<view class='typeBgView'>
+  <view class='typeTitle'>类型:</view>
+  <view class="'typeItem'+{{typeSelNum == 0?'selTypeItem':'normalTypeItem'}}" bindtap='typeClick' data-type = '0' >发明专利</view>
+  <view class="'typeItem'+{{typeSelNum == 1?'selTypeItem':'normalTypeItem'}}" bindtap='typeClick' data-type = '1'>实用新型</view>
+  <view class="'typeItem'+{{typeSelNum == 2?'selTypeItem':'normalTypeItem'}}" bindtap='typeClick' data-type = '2'>外观专利</view>
+</view>
+<view class='typeBgView'>
+  <view class='typeTitle'>领域:</view>
+  <picker class='domainItem' value="{{index}}" range="{{domainData}}" bindchange="bindPickerChange">{{domainData[index]}}</picker>
+</view>
+<view class='typeBgView'>
+  <view class='typeTitle'>减缓:</view>
+  <view class="'typeItem'+{{discountType == 0?'selTypeItem':'normalTypeItem'}}" bindtap='discountClick' data-type = '0'>无减缓</view>
+  <view class="'typeItem'+{{discountType == 1?'selTypeItem':'normalTypeItem'}}" bindtap='discountClick' data-type = '1'>个人减缓</view>
+  <view class="'typeItem'+{{discountType == 2?'selTypeItem':'normalTypeItem'}}" bindtap='discountClick' data-type = '2'>单位减缓</view>
+</view>
+<view>
+  <image class='bottomImage' src='/image/bgImg/bg_1.png'                     style="height:{{imageHeight}}px;"></image> 
+</view>
+<view class='bottomBtnView' bindtap='applyForPatent'>一键申请</view>

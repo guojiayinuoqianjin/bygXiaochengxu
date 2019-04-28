@@ -1,0 +1,28 @@
+<view>
+  <swiper class="swiper_box" circular='ture' indicator-dots="{{indicatorDots}}"                   vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" 
+          duration="{{duration}}" style="height:{{imageHeight}}px;">
+    <block wx:for="{{imgUrls}}" wx:key="{{id}}">
+      <swiper-item >
+        <image src='http://img.iprchg.com{{item.imgUrl}}' class="slide-image" bindload='imageLoad' />
+      </swiper-item>
+    </block>
+  </swiper>
+</view> 
+<view style="display:flex;flex-direction:row;background-color: white;">
+  <view class='itemView' bindtap='searchPatent'>
+    <image src='/image/icon/searchPatent.png' class='itemImage'></image>
+    <view class='itemTitle'>专利检索</view>
+  </view>
+  <view class='itemView' bindtap='searchTrademark'>
+    <image src='/image/icon/searchTrademark.png' class='itemImage'></image>
+    <view class='itemTitle'>差商标</view>
+  </view>
+  <view class='itemView' bindtap='polocyList'>
+    <image src='/image/icon/PolicyIcon.png' class='itemImage'></image>
+    <view class='itemTitle'>政策信息</view>
+  </view>
+  <view class='itemView' bindtap='evaluationPatent'>
+    <image src='/image/icon/EvaluationIcon.png' class='itemImage'></image>
+    <view class='itemTitle'>专利评估</view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/policy/policy.wxml-->
+<view class='header'>
+  <view class='subView'>
+      <view class='typeView'>标题</view> 
+      <input class='search' value='情书屎壳郎发你啦发个'></input>
+  </view>
+  <view class='totalLab'>共检索到xxx条结果</view>
+  <view class='timeBg'>
+    <view class='timeSort'>时间排序</view>
+    <image class='sortIcon' src='/image/icon/timeUp.png'></image>
+  </view>
+</view>

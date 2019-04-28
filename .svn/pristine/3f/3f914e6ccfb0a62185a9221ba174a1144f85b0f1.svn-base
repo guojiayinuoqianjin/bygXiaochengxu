@@ -1,0 +1,25 @@
+<!--pages/policy/policy.wxml-->
+<view>
+  <view class='header'>
+    <view class='subView'>
+      <view class='typeView'>标题</view>
+      <input class='search' value='情书屎壳郎发你啦发个' confirm-type="search"></input>
+    </view>
+    <view class='totalLab'>共检索到{{totalNum}}条结果</view>
+    <view class='timeBg' bindtap='softClick'>
+      <view class='timeSort'>时间排序</view>
+      <image class='sortIcon' src='/image/icon/timeUp.png'></image>
+    </view>
+  </view>
+  <block wx:for="{{dataList}}" wx:for-item="item" wx:key="{{item.id}}" data-index="{{item.id}}">
+    <view class="itemView" bindtap='tableViewItemClick'>
+      <view class='titleView '>"{{item.title}}"</view>
+      <view class='addrView subtext'>{{item.addr+item.source}}</view>
+      <view class='timeView subtext'>{{item.pubDate}}</view>
+    </view>
+  </block>
+</view>
+<view class="loadmore" hidden="{{isHideLoadMore}}">
+  <view class="loading"></view>
+  <view class="loadmore__tips">正在加载</view>
+</view>

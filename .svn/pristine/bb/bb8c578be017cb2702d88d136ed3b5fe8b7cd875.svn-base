@@ -1,0 +1,4 @@
+<!--pages/policydetail/policydetail.wxml-->
+<view>
+<web-view src="{{path}}"></web-view>
+</view>

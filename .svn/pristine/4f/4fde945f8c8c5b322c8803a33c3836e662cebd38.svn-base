@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/searchPatent/searchPatent",
+    "pages/index/index",
+    "pages/policy/policy",
+    "pages/logs/logs",
+    "pages/policydetail/policydetail",
+    "pages/searchTrademark/searchTrademark"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fe6246",
+    "navigationBarTitleText": "八月瓜",
+    "navigationBarTextStyle": "white"
+  }
+}

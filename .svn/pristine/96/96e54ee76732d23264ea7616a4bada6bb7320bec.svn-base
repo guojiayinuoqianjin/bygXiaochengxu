@@ -1,0 +1,32 @@
+<!--pages/handlePatent/handlePatent.wxml-->
+<view class='imageBgView'>
+  <image class='image' src='/image/bgImg/copyright_img.png'></image>
+</view>
+<view class='infoBgView'>
+  <view class='title'>{{typeTitleData[typeSelNum].name}}</view>
+  <view class='info'>{{typeTitleInfo[typeSelNum]}}</view>
+  <view class='info'>服务费：<span>{{servicePrice[priceIndex]}}</span> 官费：<span>{{officialPrice[priceIndex]}}             </span></view>
+  <view class='info'>价格：<span>{{priceData[priceIndex]}}</span></view>
+</view>
+<view class='typeBgView'>
+  <view class='typeTitle'>类型:</view>
+  <view class="'typeItem'+{{typeSelNum == 0?'selTypeItem':'normalTypeItem'}}" bindtap='typeClick' data-type = '0' >软件著作权</view>
+  <view class="'typeItem'+{{typeSelNum == 1?'selTypeItem':'normalTypeItem'}}" bindtap='typeClick' data-type = '1'>作品著作权</view>
+  <view class="'typeItem'+{{typeSelNum == 2?'selTypeItem':'normalTypeItem'}}" bindtap='typeClick' data-type = '2'>加急版权</view>
+</view>
+<view class='typeBgView'hidden='{{urgentInfoHidden}}'>
+  <view class='typeTitle'>加急:</view>
+  <picker class='domainItem' value="{{urgentIndex}}" range="{{urgentData}}" bindchange="bindPickerChange">{{urgentData[urgentIndex]}}</picker>
+</view>
+<view>
+  <image class='bottomImage' src='/image/bgImg/copy_1.png'                     style="height:{{imageHeight}}px;"></image> 
+</view>
+<view class='bottomBtnView' bindtap='applyForCopyRight'>办理</view>
+
+<view class='phoneInputBgView' bindtap='hidden' hidden='{{userInfoHidden}}' ></view>
+<view class='phoneInputView' hidden='{{userInfoHidden}}'>
+  <view class='submitTitle'>请填写联系方式</view>
+  <view class='imputTitle'>姓名 <input placeholder='请输入姓名' bindinput='usernameInput'></input></view>
+  <view class='imputTitle'>手机号<text>*</text> <input placeholder='请输入手机号' bindinput='userphoneInput'></input></view>
+  <view class='submitBgView'><view class='submitView' bindtap='submit'>提交</view></view>
+</view>

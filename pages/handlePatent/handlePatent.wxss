@@ -1,0 +1,214 @@
+/* pages/handlePatent/handlePatent.wxss */
+
+.imageBgView {
+  width: 100%;
+  height: 130px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 300px;
+  height: 110px;
+}
+
+.infoBgView {
+  width: 100%;
+  height: 110px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.title {
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #666;
+  font-size: 15px;
+}
+
+.info {
+  padding-left: 10px;
+  color: #666;
+  padding-top: 5px;
+  font-size: 12px;
+}
+
+.info span {
+  color: #fe6246;
+}
+
+.typeBgView {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.numInputBgView {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.numInputBgView input {
+  font-size: 12px;
+  border: 1px dashed #ccc;
+  color: #666;
+  margin-left: 10px;
+  width: 260px;
+  height: 25px;
+  padding-left: 5px;
+}
+
+.typeTitle {
+  padding-left: 10px;
+  color: #666;
+  font-size: 12px;
+}
+
+.typeItem {
+  font-size: 12px;
+  width: 80px;
+  height: 25px;
+  /* background-color: red; */
+  margin-left: 10px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.selTypeItem {
+  border: 1px dashed #fe6246;
+  color: #fe6246;
+}
+
+.normalTypeItem {
+  border: 1px dashed #ccc;
+  color: #666;
+}
+
+.domainItem {
+  font-size: 12px;
+  width: 260px;
+  height: 25px;
+  /* background-color: red; */
+  margin-left: 10px;
+  line-height: 25px;
+  padding-left: 3px;
+  border: 1px dashed #ccc;
+  color: #666;
+}
+
+.bottomImage {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+
+.bottomBtnView {
+  width: 100%;
+  height: 44px;
+  background-color: #fe6246;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: white;
+  text-align: center;
+  line-height: 44px;
+}
+
+.phoneInputBgView {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  z-index: 5;
+}
+
+.phoneInputView {
+  width: 80%;
+  height: 260px;
+  background-color: white;
+  opacity: 1;
+  z-index: 6;
+  left: 10%;
+  top: 100px;
+  position: fixed;
+  border-radius: 5px;
+}
+
+.submitTitle {
+  width: 100%;
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  margin-top:-20px;
+}
+
+.imputTitle {
+  width: 80px;
+  font-size: 14px;
+  color: #666;
+  height: 30px;
+  line-height: 30px;
+}
+
+.imputTitle text {
+  color: #fe6246;
+}
+
+.inputBgView {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.inputBgView input {
+  border: 1px dashed #ccc;
+  color: #666;
+  width: 100%;
+  font-size: 12px;
+  margin-right: 20px;
+  padding-left: 5px;
+}
+
+.submitBgView {
+  width: 100%;
+  height: 34px;
+  /* background-color:yellow; */
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submitView {
+  width: 200px;
+  height: 34px;
+  background-color: #fe6246;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 34px;
+  font-size: 18px;
+}
+.closeImageView {
+  width: 20px;
+  height: 20px;
+   margin-top: 5px;
+    margin-left: 5px;
+}

@@ -1,0 +1,83 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.6",
+	"appid": "wxfd81af49971a3b9c",
+	"projectname": "%E5%85%AB%E6%9C%88%E7%93%9C",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "ppp",
+					"pathName": "pages/policy/policy",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/policyFilter/policyFilter",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "filter",
+					"pathName": "pages/policyFilter/policyFilter",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "home",
+					"pathName": "pages/home/home",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "trademark",
+					"pathName": "pages/searchTrademark/searchTrademark",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "专利检索",
+					"pathName": "pages/searchPatent/searchPatent",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "专利办理",
+					"pathName": "pages/handlePatent/handlePatent",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "商标办理详细",
+					"pathName": "pages/handleTrademark/handleTrademark",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "版权",
+					"pathName": "pages/handleCopyright/handleCopyright",
+					"query": ""
+				}
+			]
+		}
+	}
+}

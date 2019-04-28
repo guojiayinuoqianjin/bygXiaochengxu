@@ -1,0 +1,189 @@
+/* pages/policy/policy.wxss */
+
+/* 头部背景图 */
+
+.scrollView {
+  height: 100%;
+}
+
+.header {
+  height: 74px;
+  background-color: white;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+
+.subView {
+  width: 92%;
+  height: 34px;
+  border-radius: 4px;
+  background-color: white;
+  margin: auto;
+  line-height: 34px;
+  overflow: hidden;
+  color: white;
+   /* display: flex;  */
+}
+
+.typeView {
+  height: 100%;
+  flex: 0 0 40px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 14px;
+  padding: 0;
+  background-color: #fe6246;
+  float: left;
+  display: flex;
+}
+
+.search {
+  background-color: #f2f2f2;
+  height: 100%;
+  /* float: right; */
+  color: #666;
+  display: flex;
+  /*弹性缩放  */
+  flex: 1;
+  font-size: 14px;
+  /* font-family: "黑体"; */
+}
+
+.totalLab {
+  width: 60%;
+  /* background-color: orange; */
+  height: 35px;
+  line-height: 35px;
+  margin-left: 4%;
+  font-size: 14px;
+  color: #666;
+  float: left;
+}
+
+.sortIcon {
+  width: 17.5px;
+  height: 16.5px;
+  float: right;
+  /* background-color: yellow; */
+  margin-top: 9px;
+}
+
+.timeBg {
+  float: right;
+  width: 75.5px;
+  height: 35px;
+  margin-right: 4%;
+}
+
+.timeSort {
+  width: 58px;
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  color: #666;
+  /* background-color: orange; */
+}
+
+.itemView {
+  height: 90px;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid #e8e8e8;
+}
+
+.titleView {
+  display: -webkit-box;
+  width: 92%;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* background-color: yellow; */
+  height: 50px;
+  line-height: 25px;
+  margin: auto;
+  margin-top: 10px;
+  color: #333;
+}
+
+.addrView {
+  float: left;
+  margin-left: 4%;
+  /* background-color: red; */
+}
+
+.timeView {
+  float: right;
+  margin-right: 4%;
+  /* background-color: green; */
+  text-align: right;
+}
+
+.subtext {
+  width: 46%;
+  height: 30px;
+  color: #999;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.loadmore {
+  width: 65%;
+  margin: 1.5em auto;
+  line-height: 1.6em;
+  font-size: 14px;
+  text-align: center;
+}
+
+.loading {
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-animation: weuiLoading 1s steps(12, end) infinite;
+  animation: weuiLoading 1s steps(12, end) infinite;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=) no-repeat;
+  background-size: 100%;
+}
+
+.loadmore__tips {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.filterView{
+  background-color: white;
+  position:fixed;
+  z-index:2;
+  width:100%;
+  height:100%;
+  top:0px;
+  overflow: hidden;
+  /* opacity: 0.5; */
+}
+.closeImage{
+  width: 34px;
+  height: 34px;
+  /* background-color: yellowgreen; */
+  display: flex;
+}
+.chooseResultBgView{
+  width: 100%;
+  height: 34px;
+  background-color: yellowgreen;
+  display: flex;
+}
+.provinceView{
+  width: 25%;
+  height: 100%;
+  background-color: gold;
+  display: flex;
+}
+.filterItemView{
+  height: 34px;
+  width: 100%;
+}

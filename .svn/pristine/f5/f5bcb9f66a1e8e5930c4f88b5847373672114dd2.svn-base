@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<button bindtap='gotoPolicy'> 政策信息 </button>
+<button bindtap='gotoPatent'> 政策信息2 </button>
+<button bindtap='gotoFilter'> 筛选 </button>
+<image src='http://img.iprchg.com/20170918/20170918154917203.png'></image>

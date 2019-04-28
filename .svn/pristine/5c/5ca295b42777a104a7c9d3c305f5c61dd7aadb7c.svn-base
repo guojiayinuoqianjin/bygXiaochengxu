@@ -1,0 +1,25 @@
+<!--pages/searchPatent/searchPatent.wxml-->
+<view class='header'>
+  <input class='search' bindconfirm='search' placeholder='输入搜索关键词' z-index='1' confirm-type="search"></input>
+</view>
+<view class='totalLab' hidden="{{isHide}}">共检索到{{totalNum}}条结果</view>
+<block>
+  <view class="itemView" bindtap='tableViewItemClick' wx:for="{{dataList}}" wx:for-item="item" wx:key="{{item.id}}"data-id="{{item.ID}}"data-pkinds="{{item.PKIND_S}}"data-physicdb="{{item.PHYSIC_DB}}"data-title="{{item.TITLE}}"data-an="{{item.AN}}"data-apn="{{item.APN}}"
+  data-pn="{{item.PN}}">
+    <image class='image' src='{{item.GIF_URL}}'></image>
+    <view class='content'>
+      <view class='itemTitle'>{{item.TITLE}}</view>
+      <view class='itemContent'>申请人:{{item.AN}}</view>
+      <view class='itemContent' wx:if="{{item.PKIND_S=='A'||item.PKIND_S=='B'||item.PKIND_S=='C'}}">类型:发明专利</view>
+      <view class='itemContent' wx:elif="{{item.PKIND_S=='U'||item.PKIND_S=='Y'}}">类型:实用新型</view>
+      <view class='itemContent' wx:elif="{{item.PKIND_S=='D'||item.PKIND_S=='S'}}">类型:外观专利</view>
+      <view class='itemContent'>公开号:{{item.PN}}</view>
+      <view class='itemBottom'>
+      <view class='itemData'>公开日期:{{item.PBD}}</view>
+       <view class='itemState'>{{item.VALID}}</view>
+       </view>
+    </view>
+    <image class='imageright' src='/image/icon/searchRight.png'></image>
+  </view>
+
+</block>

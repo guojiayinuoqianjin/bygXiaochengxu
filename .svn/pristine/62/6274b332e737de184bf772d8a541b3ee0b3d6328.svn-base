@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/searchPatent/searchPatent",
+    "pages/index/index",
+    "pages/policy/policy",
+    "pages/logs/logs",
+    "pages/policyDetail/policyDetail",
+    "pages/trademarkDetail/trademarkDetail",
+    "pages/searchTrademark/searchTrademark",
+    "pages/patentDetail/patentDetail",
+    "pages/handlePatent/handlePatent",
+    "pages/handleTrademark/handleTrademark",
+    "pages/handleCopyright/handleCopyright"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fe6246",
+    "navigationBarTitleText": "八月瓜",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "dark"
+  }
+}

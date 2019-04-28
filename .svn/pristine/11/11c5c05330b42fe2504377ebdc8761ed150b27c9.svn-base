@@ -1,0 +1,24 @@
+<!--pages/searchTrademark/searchTrademark.wxml-->
+ <view class='searchBgView'>
+  <input placeholder='搜商标' class='searchBox' confirm-type="search" bindconfirm='search'></input>
+</view>
+<view class='itemView' wx:for="{{dataList}}" wx:key="" bindtap='itemClick' data-regNo='{{item.regNo}}' data-intCls='{{item.intCls}}'>
+  <view class='leftBg'>
+    <image src='http://tmpic.tmkoo.com/{{item.tmImg}}-m' class='trademarkImage'>
+    </image>
+  </view>
+  <view class='contentBg'>
+    <view class='nameView'>{{item.tmName}}</view>
+    <view class='applicantView defaultText'>申请人：{{item.applicantCn}}</view>
+    <view class='trademarkTypeView defaultText'>商标类型：{{item.clsName}}</view>
+    <view class='trademarkStatusView defaultText'>商标状态：<span style="color:#fe6246">{{item.currentStatus}}</span></view>
+    <view class='timeView defaultText'>注册号：{{item.regNo}}</view>
+  </view>
+  <view class='rightBg'>
+    <image class='moreIcon' src='/image/icon/searchRight.png'></image>
+  </view>
+</view>
+<view class="loadmore" hidden="{{isHideLoadMore}}">
+  <view class="loading"></view>
+  <view class="loadmore__tips">正在加载</view>
+</view> 

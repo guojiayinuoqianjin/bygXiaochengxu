@@ -1,0 +1,125 @@
+// pages/searchPatent/searchPatent.js
+
+
+Page({
+ timeOrders:0,
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    msgList: [
+      {
+        id: 1,
+        title: "我是标题1",
+        time: "2017-12-18",
+        address: "北京市发改委"
+      }, {
+        id: 2,
+        title: "我是标题2",
+        time: "2017-12-18",
+        address: "北京市发改委"
+      }, {
+        id: 3,
+        title: "我是标题3",
+        time: "2017-12-18",
+        address: "北京市发改委"
+      }, {
+        id: 4,
+        title: "我是标题4",
+        time: "2017-12-18",
+        address: "北京市发改委"
+      }, {
+        id: 5,
+        title: "我是标题5",
+        time: "2017-12-18",
+        address: "北京市发改委"
+      }, {
+        id: 6,
+        title: "我是标题6",
+        time: "2017-12-18",
+        address: "北京市发改委"
+      }, {
+        id: 7,
+        title: "我是标题7",
+        time: "2017-12-18",
+        address: "北京市发改委"
+      }, {
+        id: 8,
+        title: "我是标题8",
+        time: "2017-12-18",
+        address: "北京市发改委"
+      }, {
+        id: 9,
+        title: "我是标题9",
+        time: "2017-12-18",
+        address: "北京市发改委"
+      }, {
+        id: 10,
+        title: "我是标题10",
+        time: "2017-12-18",
+        address: "北京市发改委"
+      }]
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  },
+  timeOrder: function () {
+if(timeOrders==0){
+  
+}
+  }
+})
+  

@@ -1,0 +1,15 @@
+<!--pages/handlePatent/handlePatent.wxml-->
+<view class='imageBgView'>
+  <image class='image' src='/image/bgImg/trade_img.png'></image>
+</view>
+<view class='infoBgView'>
+  <view class='title'>{{title}}</view>
+  <view class='info'>{{content}}</view>
+  <view class='info'>服务费：<span>{{servicePrice}}</span> 官费：<span>{{officialPrice}}             </span></view>
+  <view class='info'>价格：<span>{{price}}</span></view>
+</view>
+<view>
+<view class='titleinfo'>商标注册流程</view>
+  <image  src='/image/bgImg/bus_2.png'  class='bottomImage'                   style="height:{{imageHeight}}px;"></image> 
+</view>
+<view class='bottomBtnView' bindtap='applyForTrandmark'>办理</view>

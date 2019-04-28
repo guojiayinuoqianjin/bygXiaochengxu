@@ -1,0 +1,47 @@
+/* pages/policy/policy.wxss */
+/* 头部背景图 */
+.header{
+height:44px;
+background-color:green;
+padding-top:5px;
+box-sizing:border-box;
+
+}
+.subView{
+width:90%;
+height:34px;
+border-radius:4px;
+background-color:white;
+margin:auto;
+line-height:34px;
+overflow: hidden;
+color: white;
+display: flex;
+}
+.typeView{
+height:34px;
+flex:0 0 40px;
+line-height:34px;
+text-align:center;
+font-size:14px;
+padding:0;
+background-color: #fe6246;
+float: left;
+
+}
+.searchIcon{
+    width: 30px;
+    height: 30px;
+}
+
+.search{
+    background-color: yellow;
+    height: 34px;
+    float: right;
+    color: #666666;
+    display:block;
+    /*弹性缩放  */
+    flex:1;
+    font: 14px;
+    /* font-family: "黑体"; */
+}

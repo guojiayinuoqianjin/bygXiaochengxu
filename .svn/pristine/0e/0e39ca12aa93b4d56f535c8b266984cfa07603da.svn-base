@@ -1,0 +1,16 @@
+<!--pages/sendOrder/sendOrder.wxml-->
+<view class='imageBgView'>
+  <image class='image' src='/image/bgImg/222.png'></image>
+</view>
+<view class='bottomBg'>
+  <view class='leftBg'>
+    <view wx:for="{{dataArray1}}">{{item.dictionaryName}}</view>
+  </view>
+  <view class='centerBg'>
+    <view wx:for="{{dataArray2}}">{{item.dictionaryName}}</view>
+  </view>
+  <view class='rightBg'>
+    <view wx:for="{{dataArray3}}">{{item.dictionaryName}}</view>
+  </view>
+</view>
+<view class='bottomBtnView' bindtap='applyForPatent'>一键申请</view>
