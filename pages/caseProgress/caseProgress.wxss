@@ -1,0 +1,153 @@
+/* pages/searchPatent/searchPatent.wxss */
+
+.header {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  background: white;
+   padding-bottom: 5px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: white;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  height: 100%;
+  color: #666;
+  flex: 1;
+  border-radius: 4px;
+}
+
+.totalLab {
+  width: 100%;
+  /* background-color: orange;  */
+  height: 35px;
+  line-height: 35px;
+  padding-left: 4%;
+  font-size: 14px;
+  color: #666;
+  float: left;
+  background: white;
+}
+
+.itemView {
+  background: white;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background: white;
+  border-top: 1px solid #e8e8e8;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  display: flex;
+}
+
+.content {
+  padding-right: 10px;
+  width: 78%;
+}
+
+.imageright {
+  width: 7.5px;
+  height: 14px;
+  min-width: 7.5px;
+}
+
+.itemTitle {
+  width: 100%;
+  font-size: 14px;
+  color: #666;
+  padding-left: 10px;
+  padding-right: 5px;
+  word-break: keep-all; /* 不换行 */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+.itemContent {
+  width: 100%;
+  font-size: 12px;
+  color: #999;
+  padding-left: 10px;
+  padding-right: 5px;
+  word-break: keep-all; /* 不换行 */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+.itemBottom {
+  width: 100%;
+}
+
+.itemData {
+  font-size: 12px;
+  color: #999;
+  float: left;
+  padding-left: 10px;
+  word-break: keep-all; /* 不换行 */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+.itemState {
+  font-size: 10px;
+  color: white;
+  padding-left: 10px;
+  float: right;
+  word-break: keep-all; /* 不换行 */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  background: #fe6246;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+
+.caseH1{
+  color: #f30f30;
+  font-size: 18px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.caseH2{
+  color: #f30f30;
+  font-size: 14px;
+  padding: 0 20px;
+}
+.caseContent .caseImg{
+  width: 10%;
+  height: 60px;
+  float: left
+}
+.caseContent .caseText{
+  float: left;
+   width: 90%;
+  font-size: 12px;
+  color: #fe6246;
+  word-break: keep-all; /* 不换行 */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  height: 60px;
+  line-height: 90px;
+  border-bottom: 1px solid #666;
+}

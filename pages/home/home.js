@@ -205,6 +205,12 @@ Page({
       url: '../handleCopyright/handleCopyright',
     })
   },
+  // 案件进度查询
+  caseProgress: function (e) {
+    wx.navigateTo({
+      url: '../caseProgress/caseProgress',
+    })
+  },
   HandErrand:function(e){
       wx.navigateTo({
         url: '../sendOrder/sendOrder',

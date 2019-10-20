@@ -14,7 +14,8 @@
     "pages/handleCopyright/handleCopyright",
     "pages/handleTrademarkDetails/handleTrademarkDetails",
     "pages/sendOrder/sendOrder",
-    "pages/submitOrder/submitOrder"
+    "pages/submitOrder/submitOrder",
+    "pages/caseProgress/caseProgress"
   ],
   "window": {
     "backgroundTextStyle": "dark",
