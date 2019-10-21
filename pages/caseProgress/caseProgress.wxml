@@ -2,84 +2,25 @@
 <view class='header'>
   <input class='search' bindconfirm='search' placeholder='输入案号' z-index='1' confirm-type="search"  focus='true'></input>
 </view>
-<view class='totalLab' hidden="{{isHide}}">共检索到<span style='color:#fe6246'>{{totalNum}}</span>条结果</view>
+<view class='caseH1'  hidden="{{isHide}}">案号：{{caseRefer}}</view>
+<view class='caseH2'  hidden="{{isHide}}">办理进度状态</view>
 <block>
-  <view class="itemView" bindtap='tableViewItemClick' wx:for="{{dataList}}" wx:for-item="item" wx:key="{{item.id}}"data-id="{{item.ID}}"data-pkinds="{{item.PKIND_S}}"data-physicdb="{{item.PHYSIC_DB}}"data-title="{{item.TITLE}}"data-an="{{item.AN}}"data-apn="{{item.APN}}"
-  data-pn="{{item.PN}}">
-    <image class='image' src='{{item.GIF_URL}}'></image>
-    <view class='content'>
-      <view class='itemTitle'>{{item.TITLE}}</view>
-      <view class='itemContent'>申请人:{{item.AN}}</view>
-      <view class='itemContent' wx:if="{{item.PKIND_S=='A'||item.PKIND_S=='B'||item.PKIND_S=='C'}}">类型:发明专利</view>
-      <view class='itemContent' wx:elif="{{item.PKIND_S=='U'||item.PKIND_S=='Y'}}">类型:实用新型</view>
-      <view class='itemContent' wx:elif="{{item.PKIND_S=='D'||item.PKIND_S=='S'}}">类型:外观专利</view>
-      <view class='itemContent'>公开号:{{item.PN}}</view>
-      <view class='itemBottom'>
-      <view class='itemData'>公开日期:{{item.PBD}}</view>
-       <view class='itemState'>{{item.VALID}}</view>
-       </view>
+  <view  class="itemView"  wx:for="{{dataList}}" wx:for-item="item"  data-caseState="{{item.caseState}}" data-createTime="{{item.createTime}}">
+    <view class='caseContent'>
+      <view class='caseLeft' >
+        <image class='caseImg' src='/image/bgImg/dot_check.png' mode='widthFix'></image>
+        <view class="line" wx:if="{{index != dataList.length-1}}" ></view>
+      </view>
+      <view class='caseText {{index != dataList.length-1}}'>
+         <view class="caseState"> {{item.caseState}}</view>
+         <view class="createTime"> {{item.createTime}}</view> 
+      </view>
     </view>
-   
-    <image class='imageright' src='/image/icon/searchRight.png'></image>
+    
   </view>
-  <view>
-    <view class='caseH1'>案号：N10102019U</view>
-    <view class='caseH2'>办理进度状态</view>
-    <view class='caseContent'>
-        <image class='caseImg' src='/image/icon/searchRight.png'></image>
-        <view class='caseText'>第一步</view>
-    </view>
-    <view class='caseContent'>
-        <image class='caseImg' src='/image/icon/searchRight.png'></image>
-        <view class='caseText'>第一步</view>
-    </view>
-    <view class='caseContent'>
-        <image class='caseImg' src='/image/icon/searchRight.png'></image>
-        <view class='caseText'>第一步</view>
-    </view>
-    <view class='caseContent'>
-        <image class='caseImg' src='/image/icon/searchRight.png'></image>
-        <view class='caseText'>第一步</view>
-    </view>
-    <view class='caseContent'>
-        <image class='caseImg' src='/image/icon/searchRight.png'></image>
-        <view class='caseText'>第一步</view>
-    </view>
-    <view class='caseContent'>
-        <image class='caseImg' src='/image/icon/searchRight.png'></image>
-        <view class='caseText'>第一步</view>
-    </view>
-    <view class='caseContent'>
-        <image class='caseImg' src='/image/icon/searchRight.png'></image>
-        <view class='caseText'>第一步</view>
-    </view>
-    <view class='caseContent'>
-        <image class='caseImg' src='/image/icon/searchRight.png'></image>
-        <view class='caseText'>第一步</view>
-    </view>
-    <view class='caseContent'>
-        <image class='caseImg' src='/image/icon/searchRight.png'></image>
-        <view class='caseText'>第一步</view>
-    </view>
-    <view class='caseContent'>
-        <image class='caseImg' src='/image/icon/searchRight.png'></image>
-        <view class='caseText'>第一步</view>
-    </view>
-    <view class='caseContent'>
-        <image class='caseImg' src='/image/icon/searchRight.png'></image>
-        <view class='caseText'>第一步</view>
-    </view>
-    <view class='caseContent'>
-        <image class='caseImg' src='/image/icon/searchRight.png'></image>
-        <view class='caseText'>第一步</view>
-    </view>
-    <view class='caseContent'>
-        <image class='caseImg' src='/image/icon/searchRight.png'></image>
-        <view class='caseText'>第一步</view>
-    </view>
-    <view class='caseContent'>
-        <image class='caseImg' src='/image/icon/searchRight.png'></image>
-        <view class='caseText'>第一步</view>
-    </view>
+  <view class='imageBgView'  hidden="{{isHideImg}}"> 
+    <image src='/image/bgImg/img_find_errand_iv.png' mode='widthFix'></image>
+    <view>请输入案件号查询</view>
   </view>
+  
 </block>
