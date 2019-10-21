@@ -1,4 +1,0 @@
-<!--pages/policydetail/policydetail.wxml-->
-<view>
-<web-view ></web-view>
-</view>

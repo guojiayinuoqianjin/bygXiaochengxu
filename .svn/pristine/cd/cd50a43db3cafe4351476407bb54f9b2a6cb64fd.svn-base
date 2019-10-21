@@ -1,4 +1,0 @@
-<!--pages/patentDetail/patentDetail.wxml-->
-  <view>
-<web-view src="{{path}}"></web-view>
-</view>  

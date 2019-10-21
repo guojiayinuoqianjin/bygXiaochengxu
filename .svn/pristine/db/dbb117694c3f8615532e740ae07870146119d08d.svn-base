@@ -1,6 +1,0 @@
-<!--pages/searchTrademark/searchTrademark.wxml-->
- <view class='searchBgView'>
-  <input placeholder='搜商标' class='searchBox' confirm-type="search" bindconfirm='search'></input>
-</view>
-<view class='itemView'>
-</view> 

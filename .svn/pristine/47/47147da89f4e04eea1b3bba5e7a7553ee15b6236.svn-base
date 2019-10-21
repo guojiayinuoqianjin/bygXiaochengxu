@@ -1,2 +1,0 @@
-<!--pages/trademarkDetail/trademarkDetail.wxml-->
-<web-view src = "{{url}}"></web-view>

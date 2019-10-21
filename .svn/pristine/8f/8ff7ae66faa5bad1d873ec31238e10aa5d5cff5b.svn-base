@@ -1,9 +1,0 @@
-<!--pages/policydetail/policydetail.wxml-->
-<import src="../../wxParse/wxParse.wxml"/> 
-<view class="wxParse">
-    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
-</view>
-
- <!-- <view>
-<web-view src="{{path}}"></web-view>
-</view>  -->

@@ -1,7 +1,0 @@
-<!--pages/policy/policy.wxml-->
-<view class='header'>
-  <view class='subView'>
-      <view class='typeView'>标题</view> 
-      <input class='search' value='情书屎壳郎发你啦发个'></input>
-  </view>
-</view>

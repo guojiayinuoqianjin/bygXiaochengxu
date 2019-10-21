@@ -1,5 +1,0 @@
-<!--pages/submitOrder/submitOrder.wxml-->
-<view class='lineBgView'>
-  <view class='titleView'>标   题:</view>
-  <input placeholder='设定一个吸引人的标题吧'></input>
-</view>

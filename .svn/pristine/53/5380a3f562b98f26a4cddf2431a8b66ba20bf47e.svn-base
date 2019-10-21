@@ -1,3 +1,0 @@
-<!--index.wxml-->
-<button bindtap='gotoPolicy'> 政策信息 </button>
-<button bindtap='gotoPatent'> 政策信息2 </button>
