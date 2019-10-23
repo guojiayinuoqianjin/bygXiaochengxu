@@ -49,7 +49,7 @@ Page({
         caseRefer: keyswords,
         usrId : ""
       },
-      url: 'http://192.168.1.97:8080/case/queryCaseState',
+      url: 'https://appweb.techhg.com/case/queryCaseState',
       success: function (res) {
         console.log(res.data);
         var result = res.data.body;
